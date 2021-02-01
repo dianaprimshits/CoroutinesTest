@@ -57,4 +57,7 @@ dependencies {
     implementation dependencies.lifecycleExtensions
     implementation dependencies.lifecycleViewModel
     kapt dependencies.lifecycleCompiler
+
+    testImplementation dependencies.testsJunit
+    androidTestImplementation dependencies.tests
 }

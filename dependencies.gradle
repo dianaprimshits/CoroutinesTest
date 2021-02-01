@@ -22,33 +22,42 @@ ext {
     ]
 
     google = [
-            design  : '1.2.0-alpha05',
+            design: '1.2.0-alpha05',
     ]
 
     coroutines = [
-            version: '1.3.9'
+            version: '1.4.0'
+    ]
+
+    tests = [
+            core : '1.1.2',
+            junit: '4.13.1'
     ]
 
     dependencies = [
             //kotlin
-            kotlin               : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin.version}",
-            kotlinPlugin         : "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin.version}",
+            kotlin             : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin.version}",
+            kotlinPlugin       : "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin.version}",
 
             //gradle
-            gradle               : "com.android.tools.build:gradle:${gradle.version}",
+            gradle             : "com.android.tools.build:gradle:${gradle.version}",
 
             //ui
-            appCompat            : "androidx.appcompat:appcompat:${androidX.appCompat}",
-            design               : "com.google.android.material:material:${google.design}",
-            constraintLayout     : "androidx.constraintlayout:constraintlayout:${androidX.constraintLayout}",
+            appCompat          : "androidx.appcompat:appcompat:${androidX.appCompat}",
+            design             : "com.google.android.material:material:${google.design}",
+            constraintLayout   : "androidx.constraintlayout:constraintlayout:${androidX.constraintLayout}",
 
             //lifecycle
-            lifecycleExtensions  : "androidx.lifecycle:lifecycle-extensions:${androidX.lifecycle}",
-            lifecycleCompiler    : "androidx.lifecycle:lifecycle-compiler:${androidX.lifecycle}",
-            lifecycleViewModel   : "androidx.lifecycle:lifecycle-viewmodel-ktx:${androidX.lifecycle}",
+            lifecycleExtensions: "androidx.lifecycle:lifecycle-extensions:${androidX.lifecycle}",
+            lifecycleCompiler  : "androidx.lifecycle:lifecycle-compiler:${androidX.lifecycle}",
+            lifecycleViewModel : "androidx.lifecycle:lifecycle-viewmodel-ktx:${androidX.lifecycle}",
 
             //coroutines
-            coroutinesCore       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutines.version}",
-            coroutinesAndroid    : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutines.version}"
+            coroutinesCore     : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutines.version}",
+            coroutinesAndroid  : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutines.version}",
+
+            //tests
+            testsJunit         : "junit:junit:${tests.junit}",
+            tests              : "androidx.test.ext:junit:${tests.core}"
     ]
 }
