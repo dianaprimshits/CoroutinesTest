@@ -58,6 +58,6 @@ ext {
 
             //tests
             testsJunit         : "junit:junit:${tests.junit}",
-            tests              : "androidx.test.ext:junit:${tests.core}"
+            testsCore          : "androidx.test.ext:junit:${tests.core}"
     ]
 }

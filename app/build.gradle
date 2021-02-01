@@ -58,6 +58,9 @@ dependencies {
     implementation dependencies.lifecycleViewModel
     kapt dependencies.lifecycleCompiler
 
+    implementation dependencies.coroutinesCore
+    implementation dependencies.coroutinesAndroid
+
     testImplementation dependencies.testsJunit
-    androidTestImplementation dependencies.tests
+    androidTestImplementation dependencies.testsCore
 }
