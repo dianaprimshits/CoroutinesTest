@@ -56,6 +56,7 @@ dependencies {
 
     implementation dependencies.lifecycleExtensions
     implementation dependencies.lifecycleViewModel
+    implementation dependencies.lifecycleRuntime
     kapt dependencies.lifecycleCompiler
 
     implementation dependencies.coroutinesCore

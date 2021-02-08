@@ -51,6 +51,7 @@ ext {
             lifecycleExtensions: "androidx.lifecycle:lifecycle-extensions:${androidX.lifecycle}",
             lifecycleCompiler  : "androidx.lifecycle:lifecycle-compiler:${androidX.lifecycle}",
             lifecycleViewModel : "androidx.lifecycle:lifecycle-viewmodel-ktx:${androidX.lifecycle}",
+            lifecycleRuntime   : "androidx.lifecycle:lifecycle-runtime-ktx:${androidX.lifecycle}",
 
             //coroutines
             coroutinesCore     : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutines.version}",
