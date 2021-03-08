@@ -11,7 +11,7 @@ ext {
     ]
 
     gradle = [
-            version: '3.6.1'
+            version: '4.0.1'
     ]
 
     androidX = [
